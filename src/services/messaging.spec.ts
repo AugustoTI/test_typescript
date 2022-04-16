@@ -15,7 +15,7 @@ describe('Messaging', () => {
 
   it('should call console.log once ', () => {
     const sut = createSut();
-    const consoleSpy = jest.spyOn(sut, 'sendMessage');
+    const consoleSpy = jest.spyOn(console, 'log');
     sut.sendMessage('teste');
     expect(consoleSpy).toHaveBeenCalledTimes(1);
   });

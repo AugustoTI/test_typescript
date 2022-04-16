@@ -5,7 +5,7 @@ const createSut = (name: string, price: number): Product => {
 };
 
 describe('Product', () => {
-  it('should ', () => {
+  it('should have properties name and price', () => {
     const sut = createSut('Camiseta', 10);
 
     expect(sut).toHaveProperty('name', 'Camiseta');
